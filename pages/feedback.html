@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hidden Figures Fan</title>
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/feedback.css" />
+    <link rel="shortcut icon" href="../images/fans.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Aline Sathler Delfino
+         8914268 -->
+    <header class="header">
+      <div class="title">
+        <h1 class="websiteTitle">Hidden Figures Fan</h1>
+        <h4 class="subtitle">Tell us what you have in mind</h4>
+      </div>
+
+      <img
+        class="banner"
+        src="../images/Banner.jpeg"
+        alt="Banner movie Hidden Figures"
+      />
+    </header>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li>
+          <a href="images.html">Images</a>
+          <ul class="subNavbar">
+            <li><a href="">Teste</a></li>
+            <li><a href="">Teste</a></li>
+          </ul>
+        </li>
+        <li><a href="">Tables</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+
+    <div class="gridContainer">
+      <aside class="sidebarLeft">
+        <a href="../index.html">
+          <figure class="figureSidebar">
+            <img
+              class="thumbnail"
+              src="../thumbnails/home.png"
+              alt="Home thumbnail"
+            />
+            <figcaption>Home</figcaption>
+          </figure>
+        </a>
+        <a href="images.html">
+          <figure class="figureSidebar">
+            <img
+              class="thumbnail"
+              src="../thumbnails/image.png"
+              alt="Images thumbnail"
+            />
+            <figcaption>Images</figcaption>
+          </figure>
+        </a>
+        <a href="">
+          <figure class="figureSidebar">
+            <img
+              class="thumbnail"
+              src="../thumbnails/cells.png"
+              alt="Tables thumbnail"
+            />
+            <figcaption>Tables</figcaption>
+          </figure>
+        </a>
+        <a href="feedback.html">
+          <figure class="figureSidebar">
+            <img
+              class="thumbnail"
+              src="../thumbnails/feedback.png"
+              alt="Feedback thumbnail"
+            />
+            <figcaption>Feedback</figcaption>
+          </figure>
+        </a>
+      </aside>
+
+      <main class="article">
+        <h2 class="pageTitle">Contact Us!</h2>
+
+        <div class="form1">
+          <form action="process-form" method="post">
+            <div class="field">
+              <label for="name" class="label">Name: </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="textInput"
+                tabindex="1"
+              />
+            </div>
+
+            <div class="field">
+              <label for="email" class="label">Email: </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="textInput"
+                tabindex="2"
+              />
+            </div>
+
+            <div class="field">
+              <label for="topic" class="label">Topic: </label>
+              <select name="topic" id="topic" class="textInput" tabindex="3">
+                <optgroup label="Movie">
+                  <option value="option1">Characters</option>
+                  <option value="option2">Plot</option>
+                  <option value="option3">Actors</option>
+                </optgroup>
+
+                <optgroup label="Website">
+                  <option value="option4">Images</option>
+                  <option value="option5">Accessibility</option>
+                  <option value="option6">Join the team</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="availability" class="label">Availability: </label>
+              <select
+                name="availability"
+                id="availability"
+                class="textInput"
+                tabindex="4"
+                multiple
+              >
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+                <option value="overnight">Overnight</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message" class="label">Message: </label>
+              <textarea
+                name="message"
+                id="message"
+                cols="50"
+                rows="7"
+                tabindex="5"
+              ></textarea>
+            </div>
+
+            <div class="field buttons">
+              <input type="reset" value="Clear" class="button" tabindex="6" />
+              <input type="submit" value="Submit" class="button" tabindex="7" />
+            </div>
+          </form>
+        </div>
+      </main>
+
+      <aside class="sidebarRight">
+        <h4>Quick Feedback</h4>
+
+        <div class="form2">
+          <form action="process-form" method="post">
+            <div class="field">
+              <p>My Website is:</p>
+
+              <div class="field2">
+                <input type="checkbox" name="fun" id="fun" tabindex="8" />
+                <label for="fun">Fun to visit</label>
+              </div>
+
+              <div class="field2">
+                <input
+                  type="checkbox"
+                  name="designed"
+                  id="designed"
+                  tabindex="9"
+                />
+                <label for="designed">Well Designed</label>
+              </div>
+
+              <div class="field2">
+                <input
+                  type="checkbox"
+                  name="colours"
+                  id="colours"
+                  tabindex="10"
+                />
+                <label for="colours">Uses good colours</label>
+              </div>
+
+              <div class="field2">
+                <input
+                  type="checkbox"
+                  name="bookmark"
+                  id="bookmark"
+                  tabindex="11"
+                />
+                <label for="bookmark">Bookmarking now!</label>
+              </div>
+            </div>
+
+            <div class="field">
+              <p>Will you Visit my Site Again?</p>
+              <div class="form2Grid">
+                <div class="field2">
+                  <input type="radio" name="yes" id="yes" tabindex="12" />
+                  <label for="yes"> - Yes</label>
+                  <label for="yes" class="emoji">&#128513;</label>
+                </div>
+
+                <div class="field2">
+                  <input type="radio" name="no" id="no" tabindex="13" />
+                  <label for="no"> - No</label>
+                  <label for="no" class="emoji">&#128557;</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="field  buttons">
+              <input type="submit" value="Submit" class="button" tabindex="14" />
+            </div>
+          </form>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2023 Aline Sathler</p>
+
+      <div>
+        <a href="https://www.flaticon.com/free-icons/fans" title="fans icons"
+          >Fans icons by Freepik</a
+        >
+        |
+        <a href="https://www.flaticon.com/free-icons/ui" title="ui icons"
+          >Ui icons by NajmunNahar</a
+        >
+        |
+        <a
+          href="https://www.flaticon.com/free-icons/picture"
+          title="picture icons"
+          >Picture icons by Freepik</a
+        >
+        |
+        <a href="https://www.flaticon.com/free-icons/table" title="table icons"
+          >Table icons by Pixel perfect</a
+        >
+        |
+        <a
+          href="https://www.flaticon.com/free-icons/feedback"
+          title="feedback icons"
+          >Feedback icons by Those Icons</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>

@@ -12,7 +12,7 @@
 }
 
 html {
-  font-size: 12px;
+  font-size: 14px;
   background-color: var(--primary-color);
 }
 
@@ -42,22 +42,22 @@ video {
 h2 {
   font-size: 3rem;
   color: var(--secundary-color);
-  margin: 8px;
-  padding: 8px;
+  margin: 8px 8px 8px 0;
+  padding: 8px 8px 8px 0;
 }
 
 h3 {
   font-size: 2rem;
   color: var(--secundary-color);
-  margin: 7px;
-  padding: 7px;
+  margin: 7px 7px 7px 0;
+  padding: 7px 7px 7px 0;
 }
 
 h4 {
   font-size: 1.2rem;
   color: var(--secundary-color);
-  margin: 3px;
-  padding: 3px;
+  margin: 3px 3px 3px 0;
+  padding: 3px 3px 3px 0;
 }
 
 .subtitle {

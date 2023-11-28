@@ -1,0 +1,51 @@
+.form1 {
+  width: 537px;
+}
+
+.field {
+  margin: 10px 0;
+}
+
+.label {
+  display: inline-block;
+  width: 120px;
+  vertical-align: top;
+}
+
+.textInput {
+  width: 408px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.button {
+  padding: 5px 20px;
+  background-color: var(--secundary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--fifth-color);
+  border-radius: 20px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
+  }
+}
+
+.field2 {
+  margin: 2px 0;
+}
+
+.form2Grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.emoji {
+  font-size: 1.5rem;
+}
