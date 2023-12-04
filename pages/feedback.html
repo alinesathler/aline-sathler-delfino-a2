@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/normalize.css" />
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/feedback.css" />
+    <!-- Image availaible at: https://www.flaticon.com/free-icons/fans -->
     <link rel="shortcut icon" href="../images/fans.png" type="image/x-icon" />
   </head>
   <body>
@@ -35,7 +36,7 @@
             <li><a href="">Teste</a></li>
           </ul>
         </li>
-        <li><a href="">Tables</a></li>
+        <li><a href="table.html">Tables</a></li>
         <li><a href="feedback.html">Feedback</a></li>
       </ul>
     </nav>
@@ -44,6 +45,7 @@
       <aside class="sidebarLeft">
         <a href="../index.html">
           <figure class="figureSidebar">
+            <!-- Image availaible at: https://www.flaticon.com/free-icons/ui -->
             <img
               class="thumbnail"
               src="../thumbnails/home.png"
@@ -54,6 +56,7 @@
         </a>
         <a href="images.html">
           <figure class="figureSidebar">
+            <!-- Image availaible at: https://www.flaticon.com/free-icons/picture -->
             <img
               class="thumbnail"
               src="../thumbnails/image.png"
@@ -62,8 +65,9 @@
             <figcaption>Images</figcaption>
           </figure>
         </a>
-        <a href="">
+        <a href="table.html">
           <figure class="figureSidebar">
+            <!-- Image availaible at: https://www.flaticon.com/free-icons/table -->
             <img
               class="thumbnail"
               src="../thumbnails/cells.png"
@@ -74,6 +78,7 @@
         </a>
         <a href="feedback.html">
           <figure class="figureSidebar">
+            <!-- Image availaible at: https://www.flaticon.com/free-icons/feedback -->
             <img
               class="thumbnail"
               src="../thumbnails/feedback.png"
@@ -149,6 +154,7 @@
               <textarea
                 name="message"
                 id="message"
+                class="textInput"
                 cols="50"
                 rows="7"
                 tabindex="5"
@@ -168,8 +174,8 @@
 
         <div class="form2">
           <form action="process-form" method="post">
-            <div class="field">
-              <p>My Website is:</p>
+            <fieldset class="field">
+              <legend class="fieldLegend">My Website is</legend>
 
               <div class="field2">
                 <input type="checkbox" name="fun" id="fun" tabindex="8" />
@@ -205,10 +211,10 @@
                 />
                 <label for="bookmark">Bookmarking now!</label>
               </div>
-            </div>
+            </fieldset>
 
-            <div class="field">
-              <p>Will you Visit my Site Again?</p>
+            <fieldset class="field">
+              <legend class="fieldLegend">Will you Visit my Site Again?</legend>
               <div class="form2Grid">
                 <div class="field2">
                   <input type="radio" name="yes" id="yes" tabindex="12" />
@@ -222,7 +228,7 @@
                   <label for="no" class="emoji">&#128557;</label>
                 </div>
               </div>
-            </div>
+            </fieldset>
 
             <div class="field  buttons">
               <input type="submit" value="Submit" class="button" tabindex="14" />
@@ -234,32 +240,6 @@
 
     <footer class="footer">
       <p>&copy; 2023 Aline Sathler</p>
-
-      <div>
-        <a href="https://www.flaticon.com/free-icons/fans" title="fans icons"
-          >Fans icons by Freepik</a
-        >
-        |
-        <a href="https://www.flaticon.com/free-icons/ui" title="ui icons"
-          >Ui icons by NajmunNahar</a
-        >
-        |
-        <a
-          href="https://www.flaticon.com/free-icons/picture"
-          title="picture icons"
-          >Picture icons by Freepik</a
-        >
-        |
-        <a href="https://www.flaticon.com/free-icons/table" title="table icons"
-          >Table icons by Pixel perfect</a
-        >
-        |
-        <a
-          href="https://www.flaticon.com/free-icons/feedback"
-          title="feedback icons"
-          >Feedback icons by Those Icons</a
-        >
-      </div>
     </footer>
   </body>
 </html>

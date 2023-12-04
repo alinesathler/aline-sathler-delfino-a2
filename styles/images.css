@@ -1,50 +1,83 @@
 .gridArticle {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 5px;
-    gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5px;
+  gap: 5px;
 }
 
-.figureMovie{
-    margin: 0;
-    position: relative;
-
+.figureMovie {
+  margin: 0;
+  position: relative;
 }
 
 .scene1 {
-    clip-path: polygon(9.33% 12.29%, 2.1% 7.66%, 13.98% 50.91%, 7.17% 95.4%, 88.37% 98.3%, 91.42% 94.31%, 95.28% 86.99%, 90.68% 50.18%, 96.16% 12px, 83.61% 0.1%);
+  clip-path: polygon(-2.46% -3.78%, 97.79% 8.5%, 102.92% 102.09%, 3.49% 97.13%);
 }
 
 .scene2 {
-    clip-path: polygon(9.73% -0.59%, 2.42% 54.35%, 7.66% 97.81%, 92.06% 98.30%, 95.28% 86.99%, 98.8% 52.59%, 96.16% 12px);
-    
+  clip-path: polygon(
+    9.73% -0.59%,
+    2.42% 54.35%,
+    7.66% 97.81%,
+    92.06% 98.3%,
+    95.28% 86.99%,
+    98.8% 52.59%,
+    96.16% 12px
+  );
 }
 
 .scene3 {
-    clip-path:circle(173px at 207px 175px)
+  clip-path: circle(231px at 207px 175px);
 }
 
 .scene4 {
-    clip-path: polygon(17.69% 2.66%, 2.1% 7.66%, 2.42% 54.35%, 7.66% 97.81%, 88.37% 98.3%, 91.42% 94.31%, 95.28% 86.99%, 98.8% 52.59%, 96.16% 12px, 83.61% 0.1%);
+  clip-path: polygon(
+    17.69% 2.66%,
+    2.1% 7.66%,
+    2.42% 54.35%,
+    7.66% 97.81%,
+    88.37% 98.3%,
+    91.42% 94.31%,
+    95.28% 86.99%,
+    98.8% 52.59%,
+    96.16% 12px,
+    83.61% 0.1%
+  );
 }
 
 .scenesMovie {
-    width: 100%;
+  width: 100%;
 }
 
 .figcaptionMovie {
-    position: absolute;
-    background-color: var(--secundary-color);
-    color: var(--primary-color);
-    bottom: 3px;
-    height: 30px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+  position: absolute;
+  background-color: var(--secundary-color);
+  color: var(--primary-color);
+  bottom: 3px;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
 }
 
 .sidebarRight {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .figcaptionMovie {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .gridArticle {
+    grid-template-columns: 1fr;
+  }
+
+  .scene3 {
+    clip-path: circle(231px at 280px 256px);
+  }
 }

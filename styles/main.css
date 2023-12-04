@@ -4,7 +4,7 @@
   --tertiary-color: #03e5f9;
   --quaternary-color: rgb(6, 22, 249);
   --fifth-color: #666161;
-  --sixth-color:#3634348e;
+  --sixth-color: #3634348e;
 }
 
 * {
@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  width: 75vw;
+  width: 85vw;
   font-family: "Courier New", Courier, monospace;
   text-align: justify;
   margin: 0 auto;
@@ -26,6 +26,7 @@ body {
 
 img {
   border: 1px solid var(--secundary-color);
+  max-width: 100%;
 }
 
 video {
@@ -119,7 +120,7 @@ figcaption {
     margin: 0;
   }
 
-  &>ul>li{
+  & > ul > li {
     display: inline-block;
     position: relative;
   }
@@ -129,21 +130,21 @@ figcaption {
   }
 }
 
-.subNavbar{
-    background-color: var(--fifth-color);
-    position: absolute;
-    z-index: 1;
-    display: none;
-    text-align: left;
-    width: 180px;
-    & a {
-        padding: 10px;
-        display: block;
-    }
+.subNavbar {
+  background-color: var(--fifth-color);
+  position: absolute;
+  z-index: 1;
+  display: none;
+  text-align: left;
+  width: 180px;
+  & a {
+    padding: 10px;
+    display: block;
+  }
 }
 
-.navbar ul li:hover .subNavbar{
-    display: block;
+.navbar ul li:hover .subNavbar {
+  display: block;
 }
 
 .gridContainer {
@@ -155,8 +156,7 @@ figcaption {
 
 .sidebarLeft {
   font-size: 2rem;
-  padding: 5px;
-  padding-right: 15px;
+  padding: 5px 10px 5px 5px;
   border-right: 1px solid var(--secundary-color);
 
   & a {
@@ -175,12 +175,11 @@ figcaption {
 }
 
 .article {
-  padding: 5px 15px;
+  padding: 5px 10px;
 }
 
 .sidebarRight {
-  padding: 5px;
-  padding-left: 15px;
+  padding: 5px 5px 5px 10px;
   border-left: 1px solid var(--secundary-color);
 
   & a {
@@ -195,15 +194,85 @@ figcaption {
 
 .footer {
   height: 50px;
-  padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   background-color: var(--secundary-color);
   color: var(--primary-color);
   font-size: 1.2rem;
 
   & a {
     font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  body {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .sidebarLeft {
+    grid-area: sl;
+  }
+
+  .article {
+    grid-area: at;
+  }
+
+  .sidebarRight {
+    grid-area: sr;
+  }
+
+  .gridContainer {
+    grid-template-areas:
+      "sl at at at"
+      "sr sr sr sr";
+  }
+
+  .sidebarRight {
+    border-left: none;
+    border-top: 1px solid var(--secundary-color);
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar a {
+    padding: 0 5px;
+  }
+
+  .websiteTitle {
+    font-size: 3.5rem;
+  }
+
+  .gridContainer {
+    grid-template-areas:
+      "at at at at"
+      "sl sl sl sl"
+      "sr sr sr sr";
+  }
+
+  .sidebarLeft {
+    border-right: none;
+    border-top: 1px solid var(--secundary-color);
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .banner {
+    height: 7.5vh;
+  }
+
+  .navbar {
+    font-size: 1.5rem;
   }
 }
